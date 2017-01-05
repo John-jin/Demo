@@ -13,6 +13,8 @@
 		DF3BA0D81E1DD50D005C14B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF3BA0D61E1DD50D005C14B7 /* Main.storyboard */; };
 		DF3BA0DA1E1DD50D005C14B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3BA0D91E1DD50D005C14B7 /* Assets.xcassets */; };
 		DF3BA0DD1E1DD50D005C14B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF3BA0DB1E1DD50D005C14B7 /* LaunchScreen.storyboard */; };
+		DF3BA0EA1E1E3313005C14B7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BA0E91E1E3313005C14B7 /* BaseViewController.m */; };
+		DF3BA0ED1E1E3EE3005C14B7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BA0EC1E1E3EE3005C14B7 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		DF3BA0D91E1DD50D005C14B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF3BA0DC1E1DD50D005C14B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF3BA0DE1E1DD50D005C14B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF3BA0E81E1E3313005C14B7 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		DF3BA0E91E1E3313005C14B7 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		DF3BA0EB1E1E3EE3005C14B7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		DF3BA0EC1E1E3EE3005C14B7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,11 @@
 		DF3BA0CC1E1DD50D005C14B7 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DF3BA0E61E1E31A1005C14B7 /* controller */,
+				DF3BA0E51E1E3194005C14B7 /* view */,
+				DF3BA0E41E1E318C005C14B7 /* model */,
 				DF3BA0D01E1DD50D005C14B7 /* AppDelegate.h */,
 				DF3BA0D11E1DD50D005C14B7 /* AppDelegate.m */,
-				DF3BA0D31E1DD50D005C14B7 /* ViewController.h */,
-				DF3BA0D41E1DD50D005C14B7 /* ViewController.m */,
 				DF3BA0D61E1DD50D005C14B7 /* Main.storyboard */,
 				DF3BA0D91E1DD50D005C14B7 /* Assets.xcassets */,
 				DF3BA0DB1E1DD50D005C14B7 /* LaunchScreen.storyboard */,
@@ -77,6 +84,41 @@
 				DF3BA0CE1E1DD50D005C14B7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF3BA0E41E1E318C005C14B7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		DF3BA0E51E1E3194005C14B7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		DF3BA0E61E1E31A1005C14B7 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF3BA0E71E1E32DF005C14B7 /* base */,
+				DF3BA0D31E1DD50D005C14B7 /* ViewController.h */,
+				DF3BA0D41E1DD50D005C14B7 /* ViewController.m */,
+				DF3BA0EB1E1E3EE3005C14B7 /* SecondViewController.h */,
+				DF3BA0EC1E1E3EE3005C14B7 /* SecondViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		DF3BA0E71E1E32DF005C14B7 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				DF3BA0E81E1E3313005C14B7 /* BaseViewController.h */,
+				DF3BA0E91E1E3313005C14B7 /* BaseViewController.m */,
+			);
+			name = base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +192,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF3BA0ED1E1E3EE3005C14B7 /* SecondViewController.m in Sources */,
 				DF3BA0D51E1DD50D005C14B7 /* ViewController.m in Sources */,
+				DF3BA0EA1E1E3313005C14B7 /* BaseViewController.m in Sources */,
 				DF3BA0D21E1DD50D005C14B7 /* AppDelegate.m in Sources */,
 				DF3BA0CF1E1DD50D005C14B7 /* main.m in Sources */,
 			);
