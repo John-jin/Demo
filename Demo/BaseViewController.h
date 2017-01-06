@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface BaseViewController : UIViewController
 
 -(void)nextController:(UIViewController *) pVC :(NSString *) title;
-
+-(void)backClick;
 @end

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "PutExtra.h"
 
-@interface ViewController : BaseViewController
+@interface ViewController : BaseViewController<PutExtraDelegate>
 
 
 @end

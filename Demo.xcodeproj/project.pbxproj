@@ -15,6 +15,9 @@
 		DF3BA0DD1E1DD50D005C14B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF3BA0DB1E1DD50D005C14B7 /* LaunchScreen.storyboard */; };
 		DF3BA0EA1E1E3313005C14B7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BA0E91E1E3313005C14B7 /* BaseViewController.m */; };
 		DF3BA0ED1E1E3EE3005C14B7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BA0EC1E1E3EE3005C14B7 /* SecondViewController.m */; };
+		DF3BA0F31E1F45E9005C14B7 /* NewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BA0F21E1F45E9005C14B7 /* NewTableViewController.m */; };
+		DF3BA0F71E1F6EDD005C14B7 /* TVCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BA0F61E1F6EDD005C14B7 /* TVCellTableViewCell.m */; };
+		DF3BA0FA1E1F97EC005C14B7 /* NewImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BA0F91E1F97EC005C14B7 /* NewImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,13 @@
 		DF3BA0E91E1E3313005C14B7 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		DF3BA0EB1E1E3EE3005C14B7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		DF3BA0EC1E1E3EE3005C14B7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		DF3BA0EE1E1F2B8D005C14B7 /* PutExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PutExtra.h; sourceTree = "<group>"; };
+		DF3BA0F11E1F45E9005C14B7 /* NewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTableViewController.h; sourceTree = "<group>"; };
+		DF3BA0F21E1F45E9005C14B7 /* NewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTableViewController.m; sourceTree = "<group>"; };
+		DF3BA0F51E1F6EDD005C14B7 /* TVCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVCellTableViewCell.h; sourceTree = "<group>"; };
+		DF3BA0F61E1F6EDD005C14B7 /* TVCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVCellTableViewCell.m; sourceTree = "<group>"; };
+		DF3BA0F81E1F97EC005C14B7 /* NewImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewImageViewController.h; sourceTree = "<group>"; };
+		DF3BA0F91E1F97EC005C14B7 /* NewImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +99,7 @@
 		DF3BA0E41E1E318C005C14B7 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				DF3BA0EE1E1F2B8D005C14B7 /* PutExtra.h */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -96,6 +107,7 @@
 		DF3BA0E51E1E3194005C14B7 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				DF3BA0F41E1F6EB4005C14B7 /* cell */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -108,6 +120,10 @@
 				DF3BA0D41E1DD50D005C14B7 /* ViewController.m */,
 				DF3BA0EB1E1E3EE3005C14B7 /* SecondViewController.h */,
 				DF3BA0EC1E1E3EE3005C14B7 /* SecondViewController.m */,
+				DF3BA0F11E1F45E9005C14B7 /* NewTableViewController.h */,
+				DF3BA0F21E1F45E9005C14B7 /* NewTableViewController.m */,
+				DF3BA0F81E1F97EC005C14B7 /* NewImageViewController.h */,
+				DF3BA0F91E1F97EC005C14B7 /* NewImageViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -119,6 +135,15 @@
 				DF3BA0E91E1E3313005C14B7 /* BaseViewController.m */,
 			);
 			name = base;
+			sourceTree = "<group>";
+		};
+		DF3BA0F41E1F6EB4005C14B7 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				DF3BA0F51E1F6EDD005C14B7 /* TVCellTableViewCell.h */,
+				DF3BA0F61E1F6EDD005C14B7 /* TVCellTableViewCell.m */,
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,11 +217,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF3BA0F31E1F45E9005C14B7 /* NewTableViewController.m in Sources */,
 				DF3BA0ED1E1E3EE3005C14B7 /* SecondViewController.m in Sources */,
 				DF3BA0D51E1DD50D005C14B7 /* ViewController.m in Sources */,
 				DF3BA0EA1E1E3313005C14B7 /* BaseViewController.m in Sources */,
+				DF3BA0F71E1F6EDD005C14B7 /* TVCellTableViewCell.m in Sources */,
 				DF3BA0D21E1DD50D005C14B7 /* AppDelegate.m in Sources */,
 				DF3BA0CF1E1DD50D005C14B7 /* main.m in Sources */,
+				DF3BA0FA1E1F97EC005C14B7 /* NewImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

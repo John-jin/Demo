@@ -8,6 +8,8 @@
 
 #import "BaseViewController.h"
 #import "ViewController.h"
+#import "SecondViewController.h"
+#import "NewTableViewController.h"
 
 @interface ViewController ()
 
@@ -15,13 +17,28 @@
 
 @implementation ViewController
 
+/**
+ * 第二个页面返回的数据
+ */
+-(void)PassValue:(NSString *)value{
+    self.navigationItem.title = value;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)gotoTableView:(UIButton *)sender {
+    NewTableViewController *cv = [self.storyboard instantiateViewControllerWithIdentifier:@"tableviewcv"];
+    [self nextController:cv :@"列表"];
+    
+}
+- (IBAction)gotoImageView:(id)sender {
 }
 
 - (IBAction)nextVC:(UIButton *)sender {
-    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"secondvc"];
+    SecondViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"secondvc"];
+    vc.delegate = self;
+    vc.value = @"传参数";
     [self nextController:vc :@"导航栏"];
     
 }

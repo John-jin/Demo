@@ -15,17 +15,19 @@
 @implementation BaseViewController
 
 - (void)viewDidLoad {
+    UIBarButtonItem *back =[[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backClick)];
+    [self.navigationItem setBackBarButtonItem:back];
     [super viewDidLoad];
 }
 
 -(void)nextController:(UIViewController *) pVC :(NSString *) title{
 
     [pVC setTitle:title];
-    UIBarButtonItem *back =[[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
-    back.title = @"返回";
-    [self.navigationItem setBackBarButtonItem:back];
     [self.navigationController pushViewController:pVC animated:YES];
     
+}
+-(void)backClick{
+    NSLog(@"click");
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
