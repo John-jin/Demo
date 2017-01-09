@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF13D4061E236CD300DF54D9 /* SaveInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF13D4051E236CD300DF54D9 /* SaveInfoViewController.m */; };
 		DF3BA0CF1E1DD50D005C14B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BA0CE1E1DD50D005C14B7 /* main.m */; };
 		DF3BA0D21E1DD50D005C14B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BA0D11E1DD50D005C14B7 /* AppDelegate.m */; };
 		DF3BA0D51E1DD50D005C14B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BA0D41E1DD50D005C14B7 /* ViewController.m */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF13D4041E236CD300DF54D9 /* SaveInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveInfoViewController.h; sourceTree = "<group>"; };
+		DF13D4051E236CD300DF54D9 /* SaveInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaveInfoViewController.m; sourceTree = "<group>"; };
 		DF3BA0CA1E1DD50D005C14B7 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3BA0CE1E1DD50D005C14B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF3BA0D01E1DD50D005C14B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				DF3BA0F21E1F45E9005C14B7 /* NewTableViewController.m */,
 				DF3BA0F81E1F97EC005C14B7 /* NewImageViewController.h */,
 				DF3BA0F91E1F97EC005C14B7 /* NewImageViewController.m */,
+				DF13D4041E236CD300DF54D9 /* SaveInfoViewController.h */,
+				DF13D4051E236CD300DF54D9 /* SaveInfoViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF13D4061E236CD300DF54D9 /* SaveInfoViewController.m in Sources */,
 				DF3BA0F31E1F45E9005C14B7 /* NewTableViewController.m in Sources */,
 				DF3BA0ED1E1E3EE3005C14B7 /* SecondViewController.m in Sources */,
 				DF3BA0D51E1DD50D005C14B7 /* ViewController.m in Sources */,
@@ -379,6 +385,7 @@
 				DF3BA0E31E1DD50D005C14B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
